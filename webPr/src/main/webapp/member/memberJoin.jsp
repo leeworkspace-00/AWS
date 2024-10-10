@@ -5,19 +5,13 @@
 <TITLE> 회원가입 </TITLE>
 <link href="../css/style.css" type="text/css" rel="stylesheet">
 <script>
-//alert("ddddd");
-
 const email = /[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]$/i;
 	
-//alert(email.test("hello5#emaicom"));
-	
-
 //버튼을 눌렀을때 check함수 작동
 function check(){
 	
 	//유효성 검사하기	
 	var fm = document.frm;	
-	
 	
 	if (fm.memberid.value ==""){
 		alert("아이디를 입력해주세요");
@@ -111,7 +105,7 @@ function hobbyCheck(){
 <section>
 	<article>	
 	<form name="frm">
-		<table style="width:800px;">
+		<table style="width:350px;">
 			<tr>
 				<th class="idcolor">아이디</th>
 				<td>

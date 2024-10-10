@@ -89,12 +89,12 @@ session(서버에서 끝날때 까지), application(프로그램이 살아있을
 	String pageUrl = "";
 	String msg = "";
 	if(value == 1){        // index.jsp 파일은 web.xml 웹 설정파일에 기본 등록 되어있어서 생략 가능
-		msg = "회원 가입되었습니다";
+		msg = "회원가입 되었습니다";
 		pageUrl=request.getContextPath()+"/index.jsp"; // request.getContextPath(): 프로젝트이름
 	//	response.sendRedirect(pageUrl); //전송방식 sendRedirect는 요청하면 다시 그 쪽으로 가라고 지시하는 방법 
 	
 	}else{
-		msg = "회원 가입 오류발생하였습니다";
+		msg = "회원가입 오류발생하였습니다";
 		pageUrl=request.getContextPath()+"/member/memberJoin.jsp";
 	//	response.sendRedirect(pageUrl);
 	}
@@ -111,7 +111,7 @@ session(서버에서 끝날때 까지), application(프로그램이 살아있을
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>memberJoinAction</title>
 </head>
 <body>
 
