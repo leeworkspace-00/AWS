@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>연산자</title>
+
+</head>
+<body>
+	<script>
+		let x = 50;
+		let y = 3;
+
+		let total = 0;
+
+		let z = x + y;
+		document.write("두수의 합은?" + z);
+		document.write("<br>");
+		let k = x - y;
+		document.write("두수의 차는?" + k);
+		document.write("<br>");
+		let g = x * y;
+		document.write("두수의 곱은?" + g);
+		document.write("<br>");
+		let h = x / y;
+		document.write("두수의 나누기는?" + h);
+		document.write("<br>");
+		let s = x % y;
+		document.write("두수의 나머지는?" + s)
+		document.write("<br>");
+
+		let q = x++;
+		document.write("후위연사자의 값은?" + q);
+		document.write("<br>");
+
+		let p = ++x;
+		document.write("전위연사자의 값은?" + p);
+		document.write("<br>");
+
+		document.write("a+=b뜻은? a=a+b라는 뜻");
+		document.write("<br>");
+
+		// document.write("");
+		document.write("조건연산자");
+		document.write("<br>");
+		let a = 2;
+		let b = 3;
+		let c = (a > b) ? "a가 b보다 크다" : "a가 b보다 작다";
+		document.write(c);
+		document.write("<br>");
+
+		// 영어 점수가
+		// 90점 이상이면 A, 80 이상 b, 70이상 c, 60점 이상 d, 60점 미만 f
+
+		let eng = 0;
+
+		if (eng >= 90) {
+			document.write("A");
+		} else if (eng >= 80) {
+			document.write("B");
+		} else if (eng >= 70) {
+			document.write("C");
+		} else if (eng >= 60) {
+			document.write("D");
+		} else {
+			document.write("F");
+		}
+	</script>
+</body>
+</html>

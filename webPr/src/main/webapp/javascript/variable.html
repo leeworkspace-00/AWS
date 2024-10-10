@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자바스크립트 변수 학습하기</title>
+
+<script>
+	let x; // 이건 전역변수 선언임
+	function f() { 
+		let y; // 지역변수 y 선언 > 요건 함수 내에서 선언되었기 때문에 f 함수 중괄호가 끝나면 소멸됨
+
+		x = 10; // 전역변수에 값 저장
+		y = 20; // 지역변수에 값저장
+		z = 30; // 이건 새로운 전역변수가 생성된 것 + 30 저장됨
+
+		if (y == 20) {
+			let b = 40; // if 블록에서만 사용되는 블록변수 b선언
+			b++;
+			document.write("블럭변수 b의 값은" + b);
+			document.write("<br>");
+		} // 여기서는 b에 접근할 수 없음 / x, y, z 모두 접근가능
+		document.write("지역변수 y값은?" + y);
+		document.write("<br>");
+
+	}// 여기서는 y와 b 접근불가능  /x랑 z는 전역이기 때문에 접근가능
+	f(); // 함수 f 호출
+	document.write("x값은?" + x);
+	document.write("<br>");
+	document.write("z값은?"+z);
+</script>
+
+
+</head>
+<body>
+
+</body>
+</html>

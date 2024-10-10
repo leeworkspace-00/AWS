@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>상단메뉴 만들기</title>
+<style>
+#nav {
+	background: skyblue;
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+ul li {
+	display: inline-block;
+	list-style-type: none;
+	padding: 0px 15px;
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none; /*링크 보이지 않게*/
+}
+
+nav ul li a:hover { /* 마우스 올렸을 때 색 바꿈*/
+	color: #ff6600;
+}
+
+div {
+	background: none;
+}
+
+#home {
+	height: 200px;
+}
+
+#inner {
+	height: 200px;
+}
+
+#outer {
+	height: 200px;
+}
+
+#acc {
+	height: 200px;
+}
+
+#q &a {
+	height: 200px;
+}
+</style>
+</head>
+<body>
+	<nav id="nav">
+		<ul>
+			<li><a href="./menu.html#home">HOME</a></li>
+			<li><a href="./menu.html#inner">INNERWEAR</a></li>
+			<li><a href="./menu.html#outer">OUTER</a></li>
+			<li><a href="./menu.html#acc">ACC/BAG</a></li>
+			<li><a href="./menu.html#q&a">Q&A</a></li>
+		</ul>
+	</nav>
+	<div id="home">홈에 관련된 내용입니다</div>
+	<div id="inner">inner에 관련된 내용입니다</div>
+	<div id="outer">outer에 관련된 내용입니다</div>
+	<div id="acc">acc에 관련된 내용입니다</div>
+	<div id="q&a">q&a에 관련된 내용입니다</div>
+
+</body>
+</html>

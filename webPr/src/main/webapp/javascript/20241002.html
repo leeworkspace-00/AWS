@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>함수연습하기</title>
+</head>
+<body>
+	<script>
+		function oddHap() {
+			let total5 = 0;
+			for (let num = 1; num < 11; num++) {
+				if (num % 2 == 1) {
+					total5 = num + total5
+				}
+				continue;
+
+			}
+			return total5;
+		}
+
+		let value = oddHap();
+
+		document.write("1-10 홀수의 합은?" + value);
+		document.write("<br>");
+
+		// 구구단 만들기
+		/*
+		for (let dan = 2; dan <= 9; dan++) {
+			for (let num = 1; num <= 9; num++) {
+				let result = 0;
+				result = dan * num;
+				document.write(dan + " X " + num + " = " + result
+						+ "&nbsp;&nbsp;");
+				document.write("<br>");
+			}
+			document.write("<br>");
+		}
+		 */
+
+		// 구구단 함수 만들기
+		function gugudan() {
+			for (let dan = 2; dan <= 9; dan++) {
+				for (let num = 1; num <= 9; num++) {
+					let result = 0;
+					result = dan * num;
+					document.write(dan + " X " + num + " = " + result
+							+ "&nbsp;&nbsp;");
+					document.write("<br>");
+				}
+				document.write("<br>");
+			}
+			return;
+		}
+		// 원하는 구구단만 출력하는 함수
+		function gugudanchoose(choose) {
+			for (let dan = 2; dan <= 9; dan++) {
+				if (choose == dan) {
+					for (let num = 1; num <= 9; num++) {
+						let result = 0;
+						result = dan * num;
+						document.write(dan + " X " + num + " = " + result
+								+ "&nbsp;&nbsp;");
+						document.write("<br>");
+					}
+				}
+				document.write("<br>");
+
+			}
+			return;
+		}
+
+		let inputnum = prompt("구구단을 입력하세요", "");
+		gugudanchoose(inputnum);
+		
+		
+		function ggdan(){
+		for (let i = 1; i <= 9; i++) {
+			let k=0;
+			k=a*i;
+			document.write(dan + " X " + num + " = " + result
+					+ "&nbsp;&nbsp;");
+			document.write("<br>");
+			}
+		return;
+		} // 최적화된 사칙연산 코드
+		// 전체를 다 돌고 오면 총 81번 연산해야하지만
+		// 최적화 시키면 1번에 연산가능
+		
+		
+			
+
+		
+	</script>
+</body>
+</html>
