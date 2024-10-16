@@ -84,6 +84,7 @@
   니<br>
   다<br>
 <!-- 자동스크롤 구현 -->
+<a href = "http://localhost/webPr/javascript/javascript_history.jsp">이동</a>
   
 <script>
 //20241015

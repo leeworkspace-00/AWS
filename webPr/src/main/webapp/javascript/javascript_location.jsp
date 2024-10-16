@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>location객체로 웹사이트 접속하기</title>
+<script>
+//20241016
+	function load() {
+		let select = document.getElementById("site");
+		window.location = select.options[select.selectedIndex].value;
+	}
+</script>
+</head>
+<body>
+	<h3>window.location으로 웹 사이트 접속</h3>
+	<hr>
+	사이트 선택 :
+	<select id="site">
+		<option value="http://www.naver.com" selected>네이버
+		<option value="http://www.google.com">구글
+		<option value="http://www.microsoft.com">마이크로소프트
+	</select>
+	<p>
+		<button onclick="load()">웹 사이트 접속</button>
+</body>
+</html>

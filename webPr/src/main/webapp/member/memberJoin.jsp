@@ -4,6 +4,7 @@
 <HEAD>
 <TITLE> 회원가입 </TITLE>
 <link href="../css/style.css" type="text/css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-latest.min.js"></script> <!-- jquery-CDN주소 추가 -->
 <script>
 const email = /[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]$/i;
 	
@@ -90,6 +91,18 @@ function hobbyCheck(){
 }
 
 
+	$(document).ready(function(){
+		
+		$("#btn").click(function() {
+			
+			alert("중복체크버튼 클릭확인");
+			
+		});
+		
+		
+	});
+
+
 
 </script>
 </HEAD>
@@ -110,6 +123,7 @@ function hobbyCheck(){
 				<th class="idcolor">아이디</th>
 				<td>
 				<input type="text" name="memberid" maxlength="30" style="width:200px;" value="" placeholder="아이디를 입력하세요">
+				<button type="button" id = "btn">아이디 중복체크</button> <!-- 아이디 중복체크 : 10.17:  AJAX로 하기위해서 만들어 둠 -->
 				</td>
 			</tr>
 			<tr>
