@@ -81,7 +81,7 @@ input[type=password] {
 }
 
 input[type=text] {
-	color : red;
+	color : black;
 	border : 2px solid skyblue;
 	border-radius : 5px;	
 }
